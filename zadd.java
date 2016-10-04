@@ -10,12 +10,27 @@ public class zadd{
 	int lp=0;
  	Scanner odczyt = new Scanner(System.in);
 	System.out.print("Podaj N");	
+	while(!odczyt.hasNextInt())
+		{
+			System.out.print("Podaj N");	
+			odczyt.next();
+		}
 	N = odczyt.nextInt();
 
 	System.out.print("Podaj MIN");
+	while(!odczyt.hasNextInt())
+		{
+			System.out.print("Podaj MIN");	
+			odczyt.next();
+		}
 	MIN = odczyt.nextInt();
 
-	System.out.print("Podaj MAX");	
+	System.out.print("Podaj MAX");
+	while(!odczyt.hasNextInt())
+		{
+			System.out.print("Podaj MAX");	
+			odczyt.next();
+		}	
 	MAX = odczyt.nextInt();
 
 	Random generator = new Random();
